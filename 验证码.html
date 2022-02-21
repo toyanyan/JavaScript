@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        result="";     /*4位验证码*/
+      
+        let a="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        let arr=[...a];/*字符串放进数组，索引值为0到arr.length-1*/
+        
+    for(i=0;i<4;i++){
+    n=Math.floor(Math.random()*arr.length); /*生成0到arr.lengrh-1的索引值*/
+     result+=arr[n];
+    }
+console.log(result);
+    </script>
+</body>
+</html>
