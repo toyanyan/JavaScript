@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*使用addEventListener()方法*/
+         /*window对象，多次执行load事件*/
+
+        window.addEventListener("load",function(){  /*执行btn1的window.onload*/
+            oBtn1 = document.getElementsByTagName("input")[0];
+            oBtn1.onclick = function(){
+                alert("1");
+            }
+        },false);
+
+        window.addEventListener("load",function(){  /*执行btn2的window.onload*/
+            oBtn2 = document.getElementsByTagName("input")[1];
+            oBtn2.onclick = function(){
+                alert("2");
+            }
+        },false);
+
+        window.addEventListener("load",function(){  /*执行btn3的window.onload*/
+            oBtn3 = document.getElementsByTagName("input")[2];
+            oBtn3.onclick = function(){
+                alert("3");
+            }
+        },false);
+    </script>
+</head>
+<body>
+    <!--三个按钮，分别对应一个window.onlaod，想让它们都执行-->
+    <input id="btn1" type="button" value="按钮1" /><br/>    
+    <input id="btn2" type="button" value="按钮2" /><br />
+    <input id="btn3" type="button" value="按钮3" /> 
+</body>
+</html>
