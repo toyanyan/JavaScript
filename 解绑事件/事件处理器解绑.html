@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            let oP = document.getElementsByTagName("p")[0];
+            let oBtn = document.getElementsByTagName("input")[0];
+            oP.onclick = changeColor;
+            function changeColor(){
+                this.style.color = "hotpink";
+            }
+            oBtn.onclick = function(){
+                oP.onclick = null;
+            }
+        }
+    </script>
+</head>
+<body>
+      <p>绿叶学习网</p>
+    <input type="button" value= "点击" />
+</body>
+</html>
