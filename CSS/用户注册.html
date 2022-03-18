@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+        p {
+            height:200px;
+            width: 200px;
+            padding: 10px;
+            overflow: auto; 
+          
+        }
+         </style>
+</head>
+<body>
+    <h3>用户注册须知</h3>
+    <p id="learn">
+        秋雨丝丝洒枝头，烟缕织成愁，遥望落花满地残红，曾也枝头盈盈娉婷，装饰他人梦。如今花落簌簌，曾绚烂完美刹那芳华。
+        看那花瓣上的珍珠，不甚清风的摆动，悄然滑落，那不舍的是离愁，尘缘已过，聚散匆匆。
+        不需忧伤，花儿，不会因为离枝而失去芬芳；
+        草儿，不会因为寒冬而放下生的期望。
+        今年花胜去年红,明年花更好，花开最美，不负这红尘人间。
+        细数走过的岁月，欢乐伴着忧伤。在时光的深处中，最美的永远艳丽多彩不褪色，那些伤痛，时间久了也就模糊不清，留下的记忆也是残缺碎片。遇到不满意时，总会拿过去的好作比较，留恋过去，厌恶此刻，始不知过去也是此刻，此刻也会过去。行走红尘人间，做个随遇而安的草木女子，让清风拂袖，心香暖怀。生命的旅途，总会有千回百转，悲喜寒凉，季节的辗转，绮丽的风景。若是懂得，这都是生活赋予的完美。有些人，有些事，也许进了你的眼，滑过你的心，又悄然的溜走了，也许只为相遇，留一道风景。把路途的美景丰盈心灵，化一道属于自己的风情。
+        人生如戏，我们上演着悲欢离合，试过欢声笑语，也试过痛哭流涕；人生如戏，我们经历过顺境逆境，尝过成功的甜，也尝过失败的苦。当中的滋味，只有身处其中的自己才能彻底体会。别人可能会以为我们表演得太夸张，其实那都是我们最真实的反应。
+
+    人生如戏，总会在我们不经意的时候埋下伏笔，等着某一天让我们恍然大悟。也许有人能够洞察先机，能够逢凶化吉；也许有人是有幸运加持，能够安然度过；也许有人过于迟钝，只能黯然叹息了。
+        
+    人生如戏，我们以为能够改变自己的命运，却没想到我们的结局早已注定。无论怎样做都摆脱不了戏里既定的安排，可谓殊途同归。如此看来，我们的拼搏和挣扎就像小丑在跳舞，徒惹人发笑罢了。
+        
+    人生如戏，无论观众对这出戏有任何的意见，在戏里的我们永远都听不见，只能按照安排表演着我们的人生。就算观众为我们叫好，我们也不会因此高兴；就算观众为我们喝倒彩，我们也不会因此沮丧。因为这出戏是属于我们自己的戏，好与坏就应由我们自己来做评判。  
+    
+    </p>
+   <label> <input type = "checkbox" disabled/>已阅读协议</label>
+    <input type = "submit"  value= "提交" disabled/>
+
+    <script>
+
+
+        let oP = document.getElementById("learn")
+
+        let oInput = document.getElementsByTagName("input")
+        
+        oP.onscroll = function(){
+            if(parseInt(oP.scrollHeight-oP.scrollTop)==oP.clientHeight){
+               for(let i = 0;i < oInput.length;i++){
+                   oInput[i].disabled=false
+               }
+            }
+        }
+
+
+
+    
+    </script>
+</body>
+</html>
